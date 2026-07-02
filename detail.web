@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance Dashboard</title>
+    <link rel="stylesheet" href="employee attendence.css">
+</head>
+<body>
+    <!-- Company Header -->
+    <header>
+        <h1>Ha Ha Company</h1>
+        <p>Employee Attendance</p>
+    </header>
+
+    <!-- Attendance Form -->
+    <section class="form-section">
+        <h2>Employee Attendance Form</h2>
+        <input type="number" id="empId" placeholder="Employee ID">
+        <input type="text" id="empName" placeholder="Employee Name">
+        <input type="number" id="workingDays" placeholder="Working Days">
+        <input type="number" id="presentDays" placeholder="Present Days">
+        <input type="number" id="leaveDays" placeholder="Leave Days">
+        <button onclick="addAttendance()">Submit</button>
+    </section>
+
+    <!-- Attendance Report Table -->
+    <section class="table-section">
+        <h2>Attendance Report</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Attendance %</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>101</td>
+                    <td>Rahul</td>
+                    <td>92%</td>
+                    <td><span class="Excellent">Excellent</span></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Priya</td>
+                    <td>76%</td>
+                    <td><span class="Good">Good</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="employee attendence.js"></script>
+</body>
+</html>
